@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="parminder63033_multilevelmarketingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Tb_Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Tb_Data">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Gender" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Age" Type="varchar" MaxLength="50" />
+          <Property Name="Religion" Type="varchar" MaxLength="50" />
+          <Property Name="Mother_Tongue" Type="varchar" MaxLength="50" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="city" Type="varchar" MaxLength="50" />
+          <Property Name="Marital_Status" Type="varchar" MaxLength="50" />
+          <Property Name="Your_Community" Type="varchar" MaxLength="50" />
+          <Property Name="Education_Level" Type="varchar" MaxLength="50" />
+          <Property Name="Occupation" Type="varchar" MaxLength="50" />
+          <Property Name="Income" Type="varchar" MaxLength="50" />
+          <Property Name="Diet" Type="varchar" MaxLength="50" />
+          <Property Name="Smoke" Type="varchar" MaxLength="50" />
+          <Property Name="Drink" Type="varchar" MaxLength="50" />
+          <Property Name="Height" Type="varchar" MaxLength="50" />
+          <Property Name="Body_Type" Type="varchar" MaxLength="50" />
+          <Property Name="Skin_Tone" Type="varchar" MaxLength="50" />
+          <Property Name="Mobile_No" Type="varchar" MaxLength="50" />
+          <Property Name="Profile" Type="varchar" MaxLength="50" />
+          <Property Name="Image" Type="varchar(max)" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="About" Type="varchar" MaxLength="200" />
+          <Property Name="Description" Type="varchar" MaxLength="200" />
+          <Property Name="Father" Type="varchar" MaxLength="50" />
+          <Property Name="Mother" Type="varchar" MaxLength="50" />
+          <Property Name="Sister" Type="varchar" MaxLength="50" />
+          <Property Name="Brother" Type="varchar" MaxLength="50" />
+          <Property Name="Family_Income" Type="varchar" MaxLength="50" />
+          <Property Name="Stay" Type="varchar" MaxLength="50" />
+          <Property Name="Family_Value" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="parminder63033_multilevelmarketingModelStoreContainer">
+          <EntitySet Name="Tb_Admin" EntityType="Self.Tb_Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tb_Data" EntityType="Self.Tb_Data" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="parminder63033_multilevelmarketingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Tb_Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Tb_Data">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Religion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mother_Tongue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Marital_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Your_Community" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Education_Level" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Income" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Diet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Smoke" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Drink" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Height" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Body_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Skin_Tone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Profile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="About" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Father" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mother" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sister" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Brother" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Family_Income" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Stay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Family_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ShadiMailEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tb_Admin" EntityType="Self.Tb_Admin" />
+          <EntitySet Name="Tb_Data" EntityType="Self.Tb_Data" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="parminder63033_multilevelmarketingModelStoreContainer" CdmEntityContainer="ShadiMailEntities">
+          <EntitySetMapping Name="Tb_Admin">
+            <EntityTypeMapping TypeName="parminder63033_multilevelmarketingModel.Tb_Admin">
+              <MappingFragment StoreEntitySet="Tb_Admin">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tb_Data">
+            <EntityTypeMapping TypeName="parminder63033_multilevelmarketingModel.Tb_Data">
+              <MappingFragment StoreEntitySet="Tb_Data">
+                <ScalarProperty Name="Family_Value" ColumnName="Family_Value" />
+                <ScalarProperty Name="Stay" ColumnName="Stay" />
+                <ScalarProperty Name="Family_Income" ColumnName="Family_Income" />
+                <ScalarProperty Name="Brother" ColumnName="Brother" />
+                <ScalarProperty Name="Sister" ColumnName="Sister" />
+                <ScalarProperty Name="Mother" ColumnName="Mother" />
+                <ScalarProperty Name="Father" ColumnName="Father" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Religion" ColumnName="Religion" />
+                <ScalarProperty Name="Mother_Tongue" ColumnName="Mother_Tongue" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+                <ScalarProperty Name="Your_Community" ColumnName="Your_Community" />
+                <ScalarProperty Name="Education_Level" ColumnName="Education_Level" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="Diet" ColumnName="Diet" />
+                <ScalarProperty Name="Smoke" ColumnName="Smoke" />
+                <ScalarProperty Name="Drink" ColumnName="Drink" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Body_Type" ColumnName="Body_Type" />
+                <ScalarProperty Name="Skin_Tone" ColumnName="Skin_Tone" />
+                <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+                <ScalarProperty Name="Profile" ColumnName="Profile" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
